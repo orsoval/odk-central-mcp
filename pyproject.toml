@@ -1,0 +1,22 @@
+[project]
+name = "odk-central-mcp"
+version = "0.1.0"
+description = "MCP server for ODK Central — expose projects, forms, submissions and entities to Claude Desktop"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Valentin SORO" }]
+dependencies = [
+    "mcp>=1.9,<2",
+    "pyodk>=1.2",
+]
+
+[project.scripts]
+odk-central-mcp = "odk_central_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/odk_central_mcp"]
