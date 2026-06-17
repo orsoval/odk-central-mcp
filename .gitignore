@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv
+uv.lock
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets — never commit real credentials
+.env
+*.toml.local
+.pyodk_config*.toml
